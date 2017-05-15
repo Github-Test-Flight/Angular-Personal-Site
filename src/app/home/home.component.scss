@@ -50,8 +50,17 @@
                     display: inline-block;
                     margin-right: 10px;
                     height: 25px;
-                    a i{
+                    width: 25px;
+                    a{
+                        color: black;
+                        i{
                         font-size: 25px;
+                        }
+                    }
+                    a:hover{
+                        i{
+                            font-size: 23px;
+                        }
                     }
                 }
             }

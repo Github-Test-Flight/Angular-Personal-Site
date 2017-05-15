@@ -48,6 +48,15 @@ header {
     }
   }
 }
+footer {
+  font-size:0.6em;
+  text-align: center;
+  clear: both;
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  color: black;
+}
 
 // Screen Frame Border 
 @media screen and (min-width: 480px) {
