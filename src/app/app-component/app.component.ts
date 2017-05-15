@@ -16,5 +16,4 @@ export class AppComponent implements OnInit {
   setDate(): void {
     this.year = new Date().getFullYear();
   }
-
 }
