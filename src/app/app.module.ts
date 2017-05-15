@@ -6,10 +6,16 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app-component/app.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ExperienceComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
