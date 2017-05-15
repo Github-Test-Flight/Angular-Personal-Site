@@ -1,6 +1,9 @@
-@import url("/normalize.css");
+@import url("./normalize.css");
 
 /* Global Defaults */
+*{
+  box-sizing: border-box;
+}
 
 html,
 body {
