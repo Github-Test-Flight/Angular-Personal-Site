@@ -1,13 +1,16 @@
 <div class="experience-container">
   <ul>
-    <li>
-      <img>
-      <p></p>
+    <li *ngFor="let experience of experiences" >
+      <a href={{experience.company_site}}><img src={{experience.logo_link}} alt='logo of {{experience.company}}'></a>
+      <p>{{experience.job_title}} | {{experience.start}} - {{experience.end}}</p>
+      <p><br>{{experience.description}}</p>
+      <p><br>{{experience.skills}}</p>
       <ul>
-        <li>
-          <img>
+        <li *ngFor="let picture of experience.picture_links">
+          <img src={{picture}} alt='Picture of experience at {{experience.company}}'>
         </li>
       </ul>
+      <div></div>
     </li>
   </ul>
 </div>

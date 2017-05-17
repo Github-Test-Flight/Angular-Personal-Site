@@ -1,7 +1,11 @@
-export class Experience{
+export class Experience {
     company: string;
+    company_site: string;
+    logo_link: string;
     job_title: string;
     description: string;
-    year: number;
+    start: string;
+    end: string;
     picture_links: string[];
+    skills: string;
 }
