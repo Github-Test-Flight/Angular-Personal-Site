@@ -11,6 +11,7 @@
                 margin: 0 auto;
                 img{
                     height: 50px;
+                    max-width: 150px;
                     margin: 0 0 10px 0;
                 }
             }
@@ -35,6 +36,21 @@
                 background-color: #777777;
             }
         }
+        li:last-child{
+            a{
+                img{
+                    height: 35px;
+                }
+            }
+            .divider{
+                background-color: white;
+            }
+        }
+    }
+    footer{
+        font-size:0.6em;
+        text-align: center;
+        color: #ccc;
     }
 }
 
@@ -42,5 +58,11 @@
 @media screen and (min-width: 480px){
     .experience-container{
         height: calc(100vh - 100px);
+        footer{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
     }
+    
 }
