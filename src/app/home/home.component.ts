@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedDataService } from '../services/shared-data.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  private year: number;
 
-  constructor() { }
+  constructor(
+    private sharedDataService: SharedDataService
+  ) { }
 
   ngOnInit() {
+    // gets current year
+    this.year = this.sharedDataService.getYear();
   }
 
 }
