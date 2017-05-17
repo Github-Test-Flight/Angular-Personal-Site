@@ -1,5 +1,12 @@
 .experience-container{
-    overflow: scroll;
+    overflow: auto;
     height: calc(100vh - 82px);
     width: 100%;
+}
+
+//Medium - Large Devices
+@media screen and (min-width: 480px){
+    .experience-container{
+        height: calc(100vh - 100px);
+    }
 }
