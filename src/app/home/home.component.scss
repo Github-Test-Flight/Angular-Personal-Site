@@ -1,7 +1,7 @@
 .home-container{
     height: calc(100vh - 100px);
     margin: 0 auto;
-    padding-top: 20px;
+    overflow: scroll;
     .image-container{
         width: 30%;
         margin: 10vh auto 0;
@@ -25,12 +25,13 @@
                 height: 35px;
             }
             #contact-button{
-                border: 1px solid black;
+                border: 1px solid #666666;
+                color: #666666;
             }
             #contact-button:hover{
                 cursor: pointer;
-                color: white;
-                background-color: black;
+                color: black;
+                border: 1px solid black;
             }
         }
         .external-links{

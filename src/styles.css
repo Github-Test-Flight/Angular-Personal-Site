@@ -1,6 +1,12 @@
 @import url("./normalize.css");
 @import '~font-awesome/css/font-awesome.css';
 
+.text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Global Defaults */
 *{
   box-sizing: border-box;
