@@ -1,7 +1,24 @@
 .experience-container{
+    margin-top: 10px;
     overflow: auto;
-    height: calc(100vh - 82px);
+    height: calc(100vh - 92px);
     width: 100%;
+    ul{
+        padding: 0 5% 0 5%;
+        li{
+            list-style: none;
+            a{
+                margin: 0 auto;
+                img{
+                    width: 70px;
+                    margin: 0 0 10px 0;
+                }
+            }
+            .skills{
+                color: #777777;
+            }
+        }
+    }
 }
 
 //Medium - Large Devices

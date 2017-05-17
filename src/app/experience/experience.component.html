@@ -4,7 +4,7 @@
       <a href={{experience.company_site}}><img src={{experience.logo_link}} alt='logo of {{experience.company}}'></a>
       <p>{{experience.job_title}} | {{experience.start}} - {{experience.end}}</p>
       <p><br>{{experience.description}}</p>
-      <p><br>{{experience.skills}}</p>
+      <p class="skills"><br>{{experience.skills}}</p>
       <ul>
         <li *ngFor="let picture of experience.picture_links">
           <img src={{picture}} alt='Picture of experience at {{experience.company}}'>

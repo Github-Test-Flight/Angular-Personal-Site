@@ -19,7 +19,7 @@ export const EXPERIENCES: Experience[] = [
             '/assets/td/2.jpg',
             '/assets/td/3.jpg',
         ],
-        skills: 'Angular, TngypeScript, ES2015, Sass, Android, Java, Git, Sketch, Figma'
+        skills: 'Angular, TypeScript, ES2015, Sass, Android, Java, Git, Sketch, Figma'
     },
     {
         company: 'Kik Interactive Inc',
