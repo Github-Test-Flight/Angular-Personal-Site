@@ -51,17 +51,38 @@
         font-size:0.6em;
         text-align: center;
         color: #ccc;
+        margin-bottom: 10px;
     }
+}
+.experience-container::-webkit-scrollbar { 
+    display: none; 
 }
 
 //Medium - Large Devices
 @media screen and (min-width: 480px){
     .experience-container{
-        height: calc(100vh - 100px);
+        height: calc(100vh - 110px);
+        max-width: 1000px;
+        margin: 0 auto;
+        ul{
+            li{
+                ul{
+                    li{
+                        display: inline-block;
+                        width: 30%;
+                        margin-right: 5%;
+                    }
+                    li:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
         footer{
             position: fixed;
             bottom: 10px;
             right: 10px;
+            margin: 0;
         }
     }
     
