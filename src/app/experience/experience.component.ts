@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Experience } from '../classes/experience';
-import { ExperienceService } from '../services/experiences.service';
+import { ExperienceService } from '../services/experience.service';
 import { SharedDataService } from '../services/shared-data.service';
 
 @Component({
