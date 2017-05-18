@@ -10,8 +10,8 @@ import { SharedDataService } from '../services/shared-data.service';
   providers: [ExperienceService]
 })
 export class ExperienceComponent implements OnInit {
-  private year: number;
-  private experiences: Experience[];
+  year: number;
+  experiences: Experience[];
 
   constructor(
     private experienceService: ExperienceService,

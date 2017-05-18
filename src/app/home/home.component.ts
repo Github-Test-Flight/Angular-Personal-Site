@@ -7,7 +7,7 @@ import { SharedDataService } from '../services/shared-data.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  private year: number;
+  year: number;
 
   constructor(
     private sharedDataService: SharedDataService
