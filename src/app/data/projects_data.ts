@@ -3,9 +3,9 @@ import { Project } from '../classes/project';
 export const PROJECTS: Project[] = [
     {
         name: 'Portfolio Website',
-        skills: 'Angular, TypeScript, HTML, Sass',
-        description: 'A dynamically populated website built following a component-Based architecture',
-        github: 'github.com',
+        skills: 'Angular, TypeScript, HTML, Sass, Sketch, Figma',
+        description: 'A dynamically populated website built using component-based architecture.',
+        github: 'https://github.com/peter-cbxu/Angular-Personal-Site',
         pictures: [
             './assets/website/1.jpg',
             './assets/website/2.jpg'
@@ -15,7 +15,7 @@ export const PROJECTS: Project[] = [
         name: 'Pebble Otaku',
         skills: 'C, PebbleJS, AniList API',
         description: 'A pebble app that notifies users when their favorite anime is about to air.',
-        github: 'github.com',
+        github: 'https://github.com/peter-cbxu/Otaku',
         pictures: [
             './assets/otaku/1.png',
             './assets/otaku/2.png',
@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
         name: 'Python Games',
         skills: 'Python, Pygame',
         description: 'Recreation of popular games from the 80s and a self designed falling ball survival game.',
-        github: 'github.com',
+        github: 'https://github.com/peter-cbxu/Falldown',
         pictures: [
             './assets/python/1.jpg',
             './assets/python/2.jpg',

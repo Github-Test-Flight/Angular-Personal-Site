@@ -24,14 +24,17 @@
                 padding: 6px 10px 6px 10px;
                 height: 35px;
             }
+            a{
+                text-decoration: none;
+            }
             #contact-button{
-                border: 1px solid #666666;
-                color: #666666;
+                border: 1px solid black;
+                color: black;
             }
             #contact-button:hover{
                 cursor: pointer;
-                color: black;
-                border: 1px solid black;
+                color: white;
+                background-color: black;
             }
         }
         .external-links{
@@ -51,7 +54,7 @@
                     }
                     a:hover{
                         i{
-                            font-size: 23px;
+                            color: #777777;
                         }
                     }
                 }
