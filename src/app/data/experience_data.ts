@@ -64,7 +64,7 @@ export const EXPERIENCES: Experience[] = [
     {
         company: 'Logics Academy',
         company_site: 'https://www.kik.com/',
-        logo_link: '/assets/logos/logics-logo.png',
+        logo_link: './assets/logos/logics-logo.png',
         job_title: 'Research and Development Intern',
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
