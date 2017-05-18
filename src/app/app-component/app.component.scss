@@ -25,6 +25,9 @@ header {
           padding: 5px 0 5px 0;
           border-bottom: 2px solid white;
         }
+        li:last-child{
+          margin-right: 0;
+        }
         li:hover {
           cursor: pointer;
           border-bottom: 2px solid black;

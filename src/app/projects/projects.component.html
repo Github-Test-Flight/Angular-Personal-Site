@@ -1,17 +1,21 @@
 <div class="projects-container">
   <ul>
     <li *ngFor="let project of projects">
-      <p>{{project.name}}</p>
+      <p class="title"><strong>{{project.name}}</strong></p>
       <a href={{project.github}} *ngIf="project.github!='none'">
         <i class="fa fa-github"></i>
       </a>
-      <p><br>{{project.skills}}</p>
-      <p>{{project.description}}</p>
+      <p><br>{{project.description}}</p>
+      <p class="skills"><br>{{project.skills}}</p>
       <ul>
         <li *ngFor="let picture of project.pictures">
-          <img src={{picture}}>
+          <img src={{picture}} alt="Picture of {{project.name}}">
         </li>
       </ul>
+      <div class="divider"></div>
     </li>
   </ul>
+  <footer>
+    <p>&copy; {{year}} Peter Xu.</p>
+  </footer>
 </div>

@@ -25,7 +25,7 @@ export const PROJECTS: Project[] = [
     {
         name: 'Bluetooth Image Plotter',
         skills: 'C, C++, Wolfram Language',
-        description: 'A robot that processes online images and wirelessly plots them out.',
+        description: 'A robot that processes online images and wirelessly plots them out on letter paper.',
         github: 'none',
         pictures: [
             './assets/printer/1.jpg',

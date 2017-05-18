@@ -1,0 +1,172 @@
+.projects-container{
+    margin-top: 10px;
+    overflow: auto;
+    height: calc(100vh - 92px);
+    width: 100%;
+    ul {
+        padding: 0 5% 0 5%;
+        li{
+            list-style: none;
+            .title{
+                display: inline;
+            }
+            a{
+                margin: 0 0 0 5px;;
+                display: inline;
+                color: black;
+            }
+            .skills{
+                color: #777777;
+            }
+            ul{
+                margin: 20px 0 0 0;
+                padding: 0;
+                li{
+                    list-style: none;
+                    img{
+                        width: 100%;
+                        border: 1px solid;
+                    }
+                }
+            }
+            .divider{
+                height: 2px;
+                width: 100px;
+                margin: 40px auto 40px;
+                background-color: #777777;
+            }
+        }
+        //For otaku since images used were differnt sizes
+        li:nth-child(2){
+            ul{
+                li{
+                    text-align: center;
+                    img{
+                        width: 60%;
+                    }
+                }
+            }
+        }
+        li:last-child{
+            .divider{
+                background-color: white;
+            }
+        }
+    }
+    footer{
+        font-size:0.6em;
+        text-align: center;
+        color: #ccc;
+        margin-bottom: 10px;
+    }
+}
+.projects-container::-webkit-scrollbar { 
+    display: none; 
+}
+
+//Medium -Large Devices
+@media screen and (min-width: 480px){
+    .projects-container{
+        height: calc(100vh - 110px);
+        max-width: 1000px;
+        margin: 0 auto;
+        ul{
+            margin: 0 auto;
+            li{
+                ul{
+                    text-align: center;
+                    li{
+                        display: inline-block;
+                        width: 30%;
+                        margin-right: 5%;
+                    }
+                    li:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            li:nth-child(2){
+                ul{
+                    li{
+                        margin-right: 5%;
+                        width: fit-content;
+                        img{
+                            width: auto;
+                            max-height: 270px;
+                        }
+                    }
+                    li:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        footer{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            margin: 0;
+        }
+    }
+}
+
+//Large Devices
+@media screen and (min-width: 880px){
+    .projects-container{
+        ul{
+            li{
+                float: left;
+                width: 50%;
+                padding-right: 2.5%;
+                margin-bottom: 40px;
+                clear: both;
+                ul{
+                    li{
+                        float: none;
+                        display: inline-block;
+                        width: 47.5%;
+                        margin-right: 5%;
+                        padding: 0;
+                        border-left: none;
+                    }
+                    li:last-child{
+                        margin-right: 0;
+                    }
+                }
+                .divider{
+                    width: 0;
+                    height: 0;
+                    margin: 0;
+                }
+            }
+            li:nth-child(even){
+                padding-left: 2.5%;
+                padding-right: 0;
+                border-left: 1px solid #bbbbbb;
+                clear: none;
+                ul{
+                    li{
+                        float: none;
+                        display: inline-block;
+                        width: 47.5%;
+                        margin-right: 5%;
+                        padding: 0;
+                    }
+                    li:last-child{
+                        margin-right: 0;
+                    }
+                }
+            }
+            li:nth-child(2){
+                ul{
+                    li{
+                        width: 30%;
+                        img{
+                            max-height: 152px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
