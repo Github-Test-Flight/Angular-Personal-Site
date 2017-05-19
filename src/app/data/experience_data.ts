@@ -36,7 +36,7 @@ export const EXPERIENCES: Experience[] = [
             './assets/kik/2.jpg',
             './assets/kik/3.jpg',
         ],
-        skills: 'JIRA, Mixpanel, Fabric, Augmentum, Git, Android, Espresso, Java'
+        skills: 'JIRA, Mixpanel, Fabric, Git, Android, Espresso, Java'
     },
     {
         company: 'Palette',
@@ -45,7 +45,7 @@ export const EXPERIENCES: Experience[] = [
         job_title: 'Software Developer',
         description: `I worked on improving the main desktop application for allowing Palette's custom
         peripheral hardware to control features in Photoshop, Illustrator, and After Effects. I also explored 
-        ways Palette can be used with non-Adobe apps such as Spotify and Final Cut Pro X`,
+        ways Palette can be used with non-Adobe apps such as Spotify and Final Cut Pro X.`,
         start: 'July 2015',
         end: 'August 2015',
         picture_links: [
@@ -80,7 +80,7 @@ export const EXPERIENCES: Experience[] = [
         job_title: 'Prototype Developer',
         description: `At this seed stage startup, I conducted market research, created user personas, and help conceptualize 
         ways in which people can better manage their online data. I also designed mockups and implemented a 
-        proof of concept prototype that was demoed to potential investors. `,
+        proof of concept prototype that was demoed to potential investors.`,
         start: 'June 2015',
         end: 'July 2015',
         picture_links: [
