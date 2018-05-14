@@ -1,7 +1,8 @@
+// TODO: Refactor styling with BEM
 .experience-container{
     margin-top: 10px;
     overflow: auto;
-    height: calc(100vh - 92px);
+    height: calc(100vh - 100px);
     width: 100%;
     ul{
         padding: 0 5% 0 5%;
@@ -34,6 +35,15 @@
                 width: 100px;
                 margin: 40px auto 40px;
                 background-color: #777777;
+            }
+        }
+        // TODO: Update counter to correspond with data
+        li:nth-child(1){
+            a{
+                img{
+                    height: 25px;
+                    max-width: none;
+                }
             }
         }
         li:last-child{
