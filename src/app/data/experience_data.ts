@@ -7,8 +7,8 @@ export const EXPERIENCES: Experience[] = [
         logo_link: './assets/logos/rangle-logo.png',
         job_title: 'Frontend Developer Intern',
         description: `While working at Rangle, I collaborated with various teams to develop secure and 
-        maintainable web apps with applications in education and workplace safety. I actively participated in fleshing 
-        out the frontend architecture for greenfield areas of the project as well refactoring the existing codebase to be 
+        maintainable web apps used in education and workplace safety. I actively participated in fleshing 
+        out the frontend architecture for greenfield areas of the projects as well as refactoring the existing codebase to be 
         more performant and maintainable. My responsibilities also involved defining software delivery strategies as
         well as consulting clients on best frontend development practices.`,
         start: 'September 2017',
@@ -18,7 +18,7 @@ export const EXPERIENCES: Experience[] = [
             './assets/rangle/2.jpg',
             './assets/rangle/3.jpg',
         ],
-        skills: 'ES6, React, Redux, Redux-Saga, Sass, Git'
+        skills: 'ES6, React, Redux, Redux-Saga, Reselect, Sass, Git'
     },
     {
         company: 'TD Bank Group',
@@ -36,7 +36,7 @@ export const EXPERIENCES: Experience[] = [
             './assets/td/2.jpg',
             './assets/td/3.jpg',
         ],
-        skills: 'Angular, TypeScript, ES6, Sass, Android, Java, Git, Sketch'
+        skills: 'TypeScript, Angular, ES6, Sass, Android, Java, Git, Sketch'
     },
     {
         company: 'Kik Interactive Inc',
@@ -55,7 +55,7 @@ export const EXPERIENCES: Experience[] = [
             './assets/kik/2.jpg',
             './assets/kik/3.jpg',
         ],
-        skills: 'JIRA, Mixpanel, Fabric, Git, Android, Espresso, Java'
+        skills: 'Android, Espresso, Java, JIRA, Mixpanel, Fabric, Git'
     },
     {
         company: 'Palette',
@@ -72,7 +72,7 @@ export const EXPERIENCES: Experience[] = [
             './assets/palette/2.jpg',
             './assets/palette/3.jpg',
         ],
-        skills: 'Qt, C++, JavaScript, Git, Asana, AdobeCC'
+        skills: 'Qt, C++, JavaScript, ExtendScript, Git, Asana, AdobeCC'
     },
     {
         company: 'Logics Academy',
