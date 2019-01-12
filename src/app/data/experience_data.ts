@@ -2,15 +2,33 @@ import { Experience } from '../classes/experience';
 
 export const EXPERIENCES: Experience[] = [
     {
+        company: 'Synapse Technology Corporation',
+        company_site: 'https://www.syntechcorporation.com/',
+        logo_link: './assets/logos/synapse-logo.png',
+        job_title: 'Software Engineering Intern',
+        description: `At Synapse, I worked on developing image processing algorithms that were crucial for the recognition of
+        unique luggage that were being put through x-ray machines. I also worked on a major re-write of the frontend which involved
+        defining the product specifications from customer/stakeholder input, architecting a saleable codebase that is easily maintainable,
+        and fleshing out integration testing practices.`,
+        start: 'September 2018',
+        end: 'December 2018',
+        picture_links: [
+            './assets/synapse/1.jpg',
+            './assets/synapse/2.jpg',
+            './assets/synapse/3.jpg',
+        ],
+        skills: 'Python, ES6, OpenCV, React, MobX, Flow, Cypress, PostCSS'
+    },
+    {
         company: 'Rangle.io',
         company_site: 'https://rangle.io/',
         logo_link: './assets/logos/rangle-logo.png',
-        job_title: 'Frontend Developer Intern',
+        job_title: 'Full Stack Developer Intern',
         description: `While working at Rangle, I collaborated with various teams to develop secure and 
         maintainable web apps used in education and workplace safety. I actively participated in fleshing 
         out the frontend architecture for greenfield areas of the projects as well as refactoring the existing codebase to be 
         more performant and maintainable. My responsibilities also involved defining software delivery strategies as
-        well as consulting clients on best frontend development practices.`,
+        well as provide on-site mentorship on best development practices.`,
         start: 'September 2017',
         end: 'April 2018',
         picture_links: [
@@ -18,13 +36,13 @@ export const EXPERIENCES: Experience[] = [
             './assets/rangle/2.jpg',
             './assets/rangle/3.jpg',
         ],
-        skills: 'ES6, React, Redux, Redux-Saga, Reselect, Sass, Git'
+        skills: 'ES6, React, Redux, Flow, Redux-Saga, Reselect, Sass'
     },
     {
         company: 'TD Bank Group',
         company_site: 'https://www.td.com/',
         logo_link: './assets/logos/td-logo.png',
-        job_title: 'Innovation Developer Intern',
+        job_title: 'Product Innovation Developer Intern',
         description: `At TD's innovation lab, I designed and developed TD's first retirement management platform, 
         a dashboard that increases transparency between retirees and financial advisors by visualizing data in a 
         simple and compelling manner. I also defined the product roadmap and various feature specs through user 
@@ -36,13 +54,13 @@ export const EXPERIENCES: Experience[] = [
             './assets/td/2.jpg',
             './assets/td/3.jpg',
         ],
-        skills: 'TypeScript, Angular, ES6, Sass, Android, Java, Git, Sketch'
+        skills: 'TypeScript, Angular, ES6, Sass, D3, Android, Java, Git, Sketch'
     },
     {
         company: 'Kik Interactive Inc',
         company_site: 'https://www.kik.com/',
         logo_link: './assets/logos/kik-logo.png',
-        job_title: 'Release and QA Engineer Intern',
+        job_title: 'Release and QA Engineering Intern',
         description: `As a member of Kik's release team, I oversaw product design, development, and testing
         of multiple features that were deployed to 17 million users. I advocated for Kik's users through using
         data metrics and user feedback to ensure our features were adding value to the product. I also organized
@@ -96,7 +114,7 @@ export const EXPERIENCES: Experience[] = [
         company: 'CityZeen',
         company_site: 'http://www.cityzeen.co/',
         logo_link: './assets/logos/cityzeen-logo.png',
-        job_title: 'Software Developer Intern',
+        job_title: 'Product Analyst Intern',
         description: `At this seed stage startup, I conducted market research, created user personas, and help conceptualize 
         ways in which people can better manage their online data. I also designed mockups and implemented a 
         proof of concept prototype that was demoed to potential investors.`,
