@@ -7,16 +7,21 @@ jobs:
   backmerge-master:
     runs-on: ubuntu-latest
     steps:
+      - name: Set Git config
+        run: |
+          git config --global user.email "test@imptrx.com"
+          git config --global user.name "SA Test"
+
       - name: Checkout staging
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.ADMIN_PAT }}
+          token: ${{ secrets.COL_PAT }}
           repository: imptrx/Angular-Personal-Site
           ref: staging
 
       - uses: actions/checkout@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.ADMIN_PAT }}
+          GITHUB_TOKEN: ${{ secrets.COL_PAT }}
       - name: Merge master back to staging
         run: |
           git fetch --unshallow
