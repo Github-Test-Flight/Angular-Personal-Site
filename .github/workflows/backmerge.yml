@@ -32,7 +32,7 @@ jobs:
       - name: Pushing to the protected branch 'staging'
         uses: CasperWA/push-protected@6b25de805895da731062c43da647425fbb383128 #v2.14
         with:
-          token: ${{ secrets.ADMIN_PAT }}
+          token: ${{ secrets.COL_PAT }}
           branch: staging
 
 
