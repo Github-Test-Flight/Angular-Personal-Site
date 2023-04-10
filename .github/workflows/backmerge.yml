@@ -7,8 +7,6 @@ jobs:
   backmerge-master:
     runs-on: ubuntu-latest
     steps:
-      - name: Set Git config
-
       - name: Checkout staging
         uses: actions/checkout@v2
         with:
