@@ -1,0 +1,18 @@
+name: Dummy Status Check
+
+on:
+  pull_request:
+    branches:
+      - staging
+      - master
+
+jobs:
+  dummy-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run dummy status check
+        run: |
+          echo "This is a dummy status check."
+          echo "Everything is okay!"
