@@ -5,7 +5,9 @@ on:
     branches:
       - staging
       - master
-
+  push:
+    branches: [master]
+    
 jobs:
   dummy-check:
     runs-on: ubuntu-22.04
