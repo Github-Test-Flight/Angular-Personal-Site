@@ -14,6 +14,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Wait for 5 minutes
+        run: |
+          echo "Waiting for 5 minutes..."
+          sleep 300
       - name: Run dummy status check
         run: |
           echo "This is a dummy status check."
