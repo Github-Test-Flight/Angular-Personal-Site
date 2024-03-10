@@ -14,13 +14,13 @@ jobs:
       - name: Checkout staging
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.ADMIN_PAT }}
+          token: ${{ secrets.IMPTR_PAT }}
           repository: imptrx/Angular-Personal-Site
           ref: staging
 
       - uses: actions/checkout@v4
         env:
-          GITHUB_TOKEN: ${{ secrets.ADMIN_PAT }}
+          GITHUB_TOKEN: ${{ secrets.IMPTR_PAT }}
       - name: Merge master back to staging
         run: |
           git fetch --unshallow
@@ -31,7 +31,7 @@ jobs:
       - name: Pushing to the protected branch 'staging'
         uses: CasperWA/push-protected@6b25de805895da731062c43da647425fbb383128 #v2.14
         with:
-          token: ${{ secrets.ADMIN_PAT }}
+          token: ${{ secrets.IMPTR_PAT }}
           branch: staging
 
 
