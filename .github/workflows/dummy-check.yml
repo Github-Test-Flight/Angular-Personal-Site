@@ -21,4 +21,4 @@ jobs:
         run: |
           echo "This is a dummy status check."
           echo "Everything is okay!"
-          echo "No more admin access check."
+          echo "No more admin access check"
