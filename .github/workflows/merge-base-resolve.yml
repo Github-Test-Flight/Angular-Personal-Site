@@ -1,0 +1,50 @@
+name: Establish Merge Base
+
+on:
+  workflow_dispatch:
+
+jobs:
+  merge-master-to-staging:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Set up Git
+      run: |
+        git config user.name 'GitHub Actions Bot'
+        git config user.email 'actions@github.com'
+
+    - name: Fetch all branches
+      run: git fetch --all
+
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git checkout staging
+        git merge-base --is-ancestor master staging && echo "No new commits in master" || echo "New commits in master"
+        if git merge-base --is-ancestor master staging; then
+          echo "::set-output name=has_changes::false"
+        else
+          echo "::set-output name=has_changes::true"
+        fi
+
+    - name: Merge master into staging
+      id: merge
+      if: steps.check_changes.outputs.has_changes == 'true'
+      run: |
+        git merge origin/master --no-commit --no-ff -s ours
+        if git diff --cached --quiet; then
+          echo "No code changes, only SHA differences. Resolving merge base."
+          git commit -m "Merge master into staging (SHA update only)"
+          echo "::set-output name=merge_status::success"
+        else
+          echo "Code changes detected. Manual review may be needed."
+          git merge --abort
+          echo "::set-output name=merge_status::aborted"
+        fi
+
+    - name: Push changes
+      if: steps.merge.outputs.merge_status == 'success'
+      run: git push origin staging
